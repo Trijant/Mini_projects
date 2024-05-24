@@ -1,0 +1,54 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: static;
+}
+
+.outer{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    top:50%;
+    left:50%;
+    translate: -150px -150px;
+    animation: moonRotation 3s linear infinite;
+}
+
+.outer::before{
+    content: "";
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: -5px;
+}
+.outer::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+    box-shadow: blueviolet 0px 0px 10px 20px;
+}
+
+@keyframes moonRotation{
+
+    100%{
+        rotate: -360deg;
+    }
+    
+}
