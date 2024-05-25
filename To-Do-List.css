@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: auto;
+    padding:20vh 20vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+#main{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background: #232323;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 3px 1px white;
+}
+form{
+    width: 40vw;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: none;
+}
+#input{
+    width:20vw;
+    height: 5vh;
+    background: #000;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    &::placeholder{
+        font-size: 17px;
+    }
+
+}
+
+hr{
+    width: 40vw;
+    margin:10px 0px;
+}
+.newNote{
+    width:40vw;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:none;
+}
+.btn{
+    width:10vw;
+    height:5vh;
+    border:none;
+    border-radius: 5px;
+    background: rgb(201, 54, 1);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+    transition: all 0.1s;
+    &:hover{
+        scale: 1.1;
+        box-shadow: 0 0 10px 2px;
+    }
+}
+.text{
+    width:20vw;
+    height: 5vh;
+    background: #000;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    overflow:hidden;
+    padding:15px;
+    &:hover{
+        scale: 1.07;
+        box-shadow: 0 0 3px 1px white;
+    }
+}
+.show{
+    width:60vw;
+    height:80vh;
+    background: #1f1e1e;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 50px;
+    font-weight: 100;
+    transition: all 0.5s;
+    box-shadow: 0 0 3px 1px white;
+    translate: 0vw -15vh;
+    font-size: 20px;
+    color: rgb(220, 219, 219);
+    left: 20vw;
+    top: 25vh;
+    &::-webkit-scrollbar {
+        border-radius: 5px;
+        width: 10px;
+        background: #000;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #ccc;
+        border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb:hover{
+        background-color: rgb(187, 50, 0);
+    }
+}
+.back{
+    position: fixed bottom;
+}
