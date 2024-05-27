@@ -1,0 +1,11 @@
+let hour=document.getElementById('hour')
+let minute=document.getElementById('minute')
+let second=document.getElementById('second')
+setInterval(()=>{
+    let currentHour=new Date().getHours()
+    let currentMinute=new Date().getMinutes()
+    let currentSecond=new Date().getSeconds()
+    hour.setAttribute('data-hour',currentHour.toString().padStart(2,'0'))
+    minute.setAttribute('data-minute',currentMinute.toString().padStart(2,'0'))
+    second.setAttribute('data-second',currentSecond.toString().padStart(2,'0'))
+},1000)
