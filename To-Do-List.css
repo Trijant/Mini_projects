@@ -96,6 +96,7 @@ hr{
     }
 }
 .show{
+    position: relative;
     width:60vw;
     height:80vh;
     background: #1f1e1e;
@@ -115,13 +116,14 @@ hr{
     color: rgb(220, 219, 219);
     left: 20vw;
     top: 25vh;
+    overflow-y: scroll;
     &::-webkit-scrollbar {
         border-radius: 5px;
         width: 10px;
-        background: #000;
+        /* background: #000; */
     }
     &::-webkit-scrollbar-thumb{
-        background: #ccc;
+        background: black;
         border-radius: 5px;
     }
     &::-webkit-scrollbar-thumb:hover{

@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    width: 60vh;
+    height: 60vh;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+    aspect-ratio: 1;
+}
+#result{
+    color: white;
+    width: 50vw;
+    font-size: 40px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    position: absolute;
+    width: 100vw;
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px 1px white;
+    transform-origin: left;
+    display:none;
+}
+.one-h{
+    top: 10vh;
+    display: block;
+    animation: width-line 1s linear;
+}
+.two-h{
+    display: block;
+    animation: width-line 1s linear;
+    top: 30vh;
+}
+.three-h{
+    display: block;
+    animation: width-line 1s linear;
+    top: 50vh;
+}
+.one-v{
+    display: block;
+    rotate: 90deg;
+    animation: width-line 1s linear;
+    left: 10vh;
+}
+.two-v{
+    display: block;
+    animation: width-line 1s linear;
+    rotate: 90deg;
+    left: 30vh;
+}
+.three-v{
+    display: block;
+    animation: width-line 1s linear;
+    rotate: 90deg;
+    left: 50vh;
+}
+.one-d{
+    display: block;
+    animation: width-line 1s linear;
+    rotate: 45deg;
+}
+.three-d{
+    display: block;
+    animation: width-line 1s linear;
+    rotate: 135deg;
+    left: 100%;
+}
+@keyframes width-line {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 100vw;
+    }
+}
